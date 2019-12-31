@@ -47,7 +47,7 @@ WHERE temperament = 'goofy';"
 end
 
 def selects_bear_that_killed_Tim
-"SELECT(name),(age),(gender),(color),(temperament),(alive)
+"SELECT(id),(name),(age),(gender),(color),(temperament),(alive)
   FROM bears
   WHERE name IS NULL;"
   
