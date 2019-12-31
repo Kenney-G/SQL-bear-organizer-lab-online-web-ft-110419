@@ -41,11 +41,11 @@ DESC LIMIT 1"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-"SELECT color,
-COUNT(color)
+"SELECT temperament,
+COUNT(temperament)
 FROM bears
-GROUP BY color
-ORDER BY COUNT(color);"
+GROUP BY temperament
+ORDER BY COUNT("goofy");"
 end
 
 def selects_bear_that_killed_Tim
