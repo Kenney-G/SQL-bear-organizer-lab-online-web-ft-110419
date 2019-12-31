@@ -44,7 +44,7 @@ def counts_number_of_bears_with_goofy_temperaments
 "SELECT temperament
 COUNT(temperament)
 FROM bears
-GROUP BY temperament
+GROUP BY (temperament)
 WHERE temperament = 'goofy';"
 end
 
