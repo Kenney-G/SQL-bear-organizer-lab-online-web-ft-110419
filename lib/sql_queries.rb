@@ -41,10 +41,8 @@ DESC LIMIT 1"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-"SELECT temperament
-COUNT(temperament)
+"SELECT COUNT(temperament)
 FROM bears
-GROUP BY (temperament)
 WHERE temperament = 'goofy';"
 end
 
